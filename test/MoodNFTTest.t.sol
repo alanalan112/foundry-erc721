@@ -37,8 +37,8 @@ contract MoodNFTTest is Test {
 
         vm.prank(MINTER1);
         moodNFT.flipMood(0);
-        // MoodNFT.Mood actualMood = MoodNFT.Mood.SAD;
-        // assert(moodNFT.getMood(0) == actualMood);
+        MoodNFT.Mood actualMood = MoodNFT.Mood.SAD;
+        assert(moodNFT.getMood(0) == actualMood);
 
         // console.log(moodNFT.tokenURI(0));
 
